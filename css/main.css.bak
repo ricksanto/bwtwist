@@ -1,0 +1,316 @@
+    /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html {
+        font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+        font-size: 18px;
+        color: #8F519D;
+    }
+    ::selection {
+        background-color: #8F519D;
+        color: #fff;
+    }
+    a {
+        background-color: transparent;
+    }
+    a,
+    a:visited {
+        color: #FF66CC;
+    }
+    a:hover {
+        text-decoration: none;
+    }
+    a:active,
+    a:hover {
+        outline: 0;
+    }
+    p{
+        text-align: justify;
+    }
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    main,
+    menu,
+    nav,
+    section,
+    summary {
+        display: block;
+    }
+    h1 {
+        font-size: 2em;
+        margin: 0.67em 0;
+    }
+    img {
+        border: 0;
+    }
+    svg:not(:root) {
+        overflow: hidden;
+    }
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+        color: inherit;
+        font: inherit;
+        margin: 0;
+    }
+    button {
+        overflow: visible;
+    }
+    button,
+    select {
+        text-transform: none;
+    }
+    button,
+    html input[type=button],
+    input[type=reset],
+    input[type=submit] {
+        -webkit-appearance: button;
+        cursor: pointer;
+    }
+    button::-moz-focus-inner,
+    input::-moz-focus-inner {
+        border: 0;
+        padding: 0;
+    }
+    /* skrollr styles */
+    #skrollr-body {
+        height: 100%;
+        overflow: visible;
+        position: relative;
+    }
+    .parallax-image.skrollable-between {
+        display: block;
+    }
+    .parallax-image-wrapper {
+        position: fixed;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        height: 80vh;
+        top: -80vh;
+    }
+    .parallax-image {
+        display: none;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        top: 0;
+    }
+    .heroimage:after {
+        z-index: 0;
+        content: '\A';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        /*background-color: #A547FF;*/
+        background-color: rgb(143, 81, 157);
+        opacity: .8;
+        transition: all 1s;
+        -webkit-transition: all 1s;
+    }
+    .gap {
+        background: transparent center no-repeat;
+        background-size: cover;
+        /*height: 70vh;*/
+        margin-bottom: 7vh;
+    }
+    .skrollr .gap {
+        background: transparent !important;
+    }
+    svg.logo {
+        width: 70vw;
+        margin-top: 50px;
+    }
+    svg.flock {
+        width: 95%;
+        margin-top: 40px;
+        margin-right: 5%;
+    }
+    #intro {
+        width: 70%;
+        display: inline-block;
+        text-align: left;
+    }
+    #intro h1 {
+        font-size: 2em;
+        margin-bottom: .8em;
+    }
+    #intro p {
+        margin-bottom: 1em;
+    }
+    #phrase {
+        max-width: 960px;
+        padding: 10px;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 1.3em;
+        width: 80vw;
+        margin: 7vh auto 0px auto;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+    #content1 {
+        max-width: 960px;
+        text-align: center;
+        margin: 0px auto;
+    }
+    .leftbar {
+        width: 25%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+
+    #main {
+        background-color: rgb(143, 81, 157);
+        padding: 5px 0px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        left: 0;
+        z-index: 100;
+    }
+
+    #main ul {
+        display: inline-block;
+    }
+    #main li {
+        list-style: none;
+        display: inline-block;
+        margin-right: 3vw;
+    }
+    #main li:last-child {
+        margin-right: 0px;
+    }
+    #main li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.2em;
+        padding: 0px;
+    }
+    #main li a:hover {
+        border-bottom: 1px solid #fff;
+    }
+    #navcontent {
+        text-align: left;
+        max-width: 960px;
+        margin: 0px auto;
+    }
+    #contact {
+        display: inline-block;
+        float: right;
+    }
+    #contact a {
+        color: #fff;
+        text-decoration: none;
+        font-size: .9em;
+        margin-right: 10px;
+    }
+    #contact a:hover {
+        border-bottom: 1px solid #fff;
+    }
+    section.bio header{
+        display: flex;
+        margin-bottom:5px;
+        background-color: #8F519D;
+        padding:5px;
+        color:#fff;
+        opacity: .9;
+    }
+    section.bio button{
+        margin:0px 200px;
+        background-color:rgba(143, 81, 157,0.2);
+        border:1px solid #fff;
+        padding:1px 5px;
+        font-size:.8em;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+    }
+    section.bio button:hover{
+        background-color:rgba(255, 255, 255,.2);
+    }
+    section.bio button:active{
+        border:1px solid #fff;
+    }
+    section.bio header h2{
+        font-size:1.5em;
+        display:block;
+        margin-bottom:10px;
+    }
+    section.bio header q{
+        display: block;
+        font-size:1.2em;
+        font-style: italic;
+        text-indent:-15px;
+        margin-left:15px;
+    }
+    section.bio img {
+        display: inline-block;
+        margin-right: 5px;
+    }
+    section.bio p {
+        display: inline-block;
+        vertical-align: top;
+    }
+    section.bio .content{
+        display:none;
+    }
+    @media (max-width:1000px) {
+        div.leftbar {
+            display: block;
+            text-align: center;
+            width: 200px;
+        }
+        div.leftbar svg.flock {
+            margin-left: 30vw;
+        }
+        #content1 {
+            width: 95vw;
+        }
+        #intro {
+            display: block;
+            width: 100%;
+        }
+    }
+    @media (max-width: 700px) {
+        #intro h1 {
+            font-size: 1.5em;
+        }
+        #intro p {
+            font-size: 16px;
+        }
+        #phrase {
+            font-size: 1em;
+        }
+        svg.logo {
+            width: 95vw;
+            margin-top: 30px;
+        }
+
+    }
+    @media(max-height:770px) {
+        #phrase {
+            margin-top: 20px;
+            font-size: .8em;
+            width: 95vw;
+        }
+    }
